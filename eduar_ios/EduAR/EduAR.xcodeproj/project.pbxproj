@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90B234D887700E78AF1 /* AppDelegate.swift */; };
 		8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90D234D887700E78AF1 /* SceneDelegate.swift */; };
-		8414C910234D887700E78AF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90F234D887700E78AF1 /* ViewController.swift */; };
 		8414C913234D887700E78AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C911234D887700E78AF1 /* Main.storyboard */; };
 		8414C915234D887800E78AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414C914234D887800E78AF1 /* Assets.xcassets */; };
 		8414C918234D887800E78AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C916234D887800E78AF1 /* LaunchScreen.storyboard */; };
@@ -23,6 +22,7 @@
 		844CA898234DDB72004593AA /* ARScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA891234DDB72004593AA /* ARScreenViewController.swift */; };
 		844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA892234DDB72004593AA /* ARScreenBuilder.swift */; };
 		844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA893234DDB72004593AA /* ARScreenInteractor.swift */; };
+		844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA89B234ECA5F004593AA /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		8414C908234D887700E78AF1 /* EduAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414C90B234D887700E78AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8414C90D234D887700E78AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8414C90F234D887700E78AF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8414C912234D887700E78AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8414C914234D887800E78AF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8414C917234D887800E78AF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		844CA891234DDB72004593AA /* ARScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenViewController.swift; sourceTree = "<group>"; };
 		844CA892234DDB72004593AA /* ARScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenBuilder.swift; sourceTree = "<group>"; };
 		844CA893234DDB72004593AA /* ARScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenInteractor.swift; sourceTree = "<group>"; };
+		844CA89B234ECA5F004593AA /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 				844CA85C234DD8EB004593AA /* ARScreen */,
 				8414C90B234D887700E78AF1 /* AppDelegate.swift */,
 				8414C90D234D887700E78AF1 /* SceneDelegate.swift */,
-				8414C90F234D887700E78AF1 /* ViewController.swift */,
+				844CA89B234ECA5F004593AA /* TestViewController.swift */,
 				8414C911234D887700E78AF1 /* Main.storyboard */,
 				8414C914234D887800E78AF1 /* Assets.xcassets */,
 				8414C916234D887800E78AF1 /* LaunchScreen.storyboard */,
@@ -264,10 +264,10 @@
 				844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */,
 				844CA897234DDB72004593AA /* ARScreenRouter.swift in Sources */,
 				844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */,
-				8414C910234D887700E78AF1 /* ViewController.swift in Sources */,
 				8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */,
 				844CA895234DDB72004593AA /* ARScreenInterfaces.swift in Sources */,
 				844CA898234DDB72004593AA /* ARScreenViewController.swift in Sources */,
+				844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */,
 				8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
