@@ -23,6 +23,16 @@
 		844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA892234DDB72004593AA /* ARScreenBuilder.swift */; };
 		844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA893234DDB72004593AA /* ARScreenInteractor.swift */; };
 		844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CA89B234ECA5F004593AA /* TestViewController.swift */; };
+		84D00652234FF7C30079966C /* VirtualObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00650234FF7C30079966C /* VirtualObject.swift */; };
+		84D00653234FF7C30079966C /* VirtualObjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00651234FF7C30079966C /* VirtualObjectLoader.swift */; };
+		84D00659234FF9310079966C /* VirtualObjectARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00656234FF9310079966C /* VirtualObjectARView.swift */; };
+		84D0065A234FF9310079966C /* VirtualObjectInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00657234FF9310079966C /* VirtualObjectInteraction.swift */; };
+		84D0065B234FF9310079966C /* ThresholdPanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00658234FF9310079966C /* ThresholdPanGesture.swift */; };
+		84D0065F234FF9890079966C /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0065D234FF9890079966C /* FocusSquareSegment.swift */; };
+		84D00660234FF9890079966C /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0065E234FF9890079966C /* FocusSquare.swift */; };
+		84D00663234FF9E80079966C /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00662234FF9E80079966C /* Float.swift */; };
+		84D00665234FFA180079966C /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00664234FFA180079966C /* CGPoint.swift */; };
+		84D00667234FFE2D0079966C /* ARScreenStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00666234FFE2D0079966C /* ARScreenStatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +80,16 @@
 		844CA892234DDB72004593AA /* ARScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenBuilder.swift; sourceTree = "<group>"; };
 		844CA893234DDB72004593AA /* ARScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenInteractor.swift; sourceTree = "<group>"; };
 		844CA89B234ECA5F004593AA /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		84D00650234FF7C30079966C /* VirtualObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObject.swift; sourceTree = "<group>"; };
+		84D00651234FF7C30079966C /* VirtualObjectLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectLoader.swift; sourceTree = "<group>"; };
+		84D00656234FF9310079966C /* VirtualObjectARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectARView.swift; sourceTree = "<group>"; };
+		84D00657234FF9310079966C /* VirtualObjectInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualObjectInteraction.swift; sourceTree = "<group>"; };
+		84D00658234FF9310079966C /* ThresholdPanGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThresholdPanGesture.swift; sourceTree = "<group>"; };
+		84D0065D234FF9890079966C /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		84D0065E234FF9890079966C /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		84D00662234FF9E80079966C /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		84D00664234FFA180079966C /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+		84D00666234FFE2D0079966C /* ARScreenStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenStatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +133,7 @@
 		8414C90A234D887700E78AF1 /* EduAR */ = {
 			isa = PBXGroup;
 			children = (
+				84D00661234FF9D80079966C /* Extensions */,
 				844CA85C234DD8EB004593AA /* ARScreen */,
 				8414C90B234D887700E78AF1 /* AppDelegate.swift */,
 				8414C90D234D887700E78AF1 /* SceneDelegate.swift */,
@@ -146,6 +167,8 @@
 		844CA85C234DD8EB004593AA /* ARScreen */ = {
 			isa = PBXGroup;
 			children = (
+				84D0065C234FF9750079966C /* FocusSquare */,
+				84D0064F234FF7B10079966C /* VirtualObject */,
 				844CA88D234DDB72004593AA /* ARScreen.storyboard */,
 				844CA88E234DDB72004593AA /* ARScreenInterfaces.swift */,
 				844CA88F234DDB72004593AA /* ARScreenPresenter.swift */,
@@ -153,8 +176,39 @@
 				844CA891234DDB72004593AA /* ARScreenViewController.swift */,
 				844CA892234DDB72004593AA /* ARScreenBuilder.swift */,
 				844CA893234DDB72004593AA /* ARScreenInteractor.swift */,
+				84D00658234FF9310079966C /* ThresholdPanGesture.swift */,
+				84D00656234FF9310079966C /* VirtualObjectARView.swift */,
+				84D00657234FF9310079966C /* VirtualObjectInteraction.swift */,
+				84D00666234FFE2D0079966C /* ARScreenStatusViewController.swift */,
 			);
 			path = ARScreen;
+			sourceTree = "<group>";
+		};
+		84D0064F234FF7B10079966C /* VirtualObject */ = {
+			isa = PBXGroup;
+			children = (
+				84D00650234FF7C30079966C /* VirtualObject.swift */,
+				84D00651234FF7C30079966C /* VirtualObjectLoader.swift */,
+			);
+			path = VirtualObject;
+			sourceTree = "<group>";
+		};
+		84D0065C234FF9750079966C /* FocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				84D0065E234FF9890079966C /* FocusSquare.swift */,
+				84D0065D234FF9890079966C /* FocusSquareSegment.swift */,
+			);
+			path = FocusSquare;
+			sourceTree = "<group>";
+		};
+		84D00661234FF9D80079966C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84D00662234FF9E80079966C /* Float.swift */,
+				84D00664234FFA180079966C /* CGPoint.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,13 +314,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D00659234FF9310079966C /* VirtualObjectARView.swift in Sources */,
+				84D0065B234FF9310079966C /* ThresholdPanGesture.swift in Sources */,
+				84D00652234FF7C30079966C /* VirtualObject.swift in Sources */,
+				84D0065A234FF9310079966C /* VirtualObjectInteraction.swift in Sources */,
+				84D00667234FFE2D0079966C /* ARScreenStatusViewController.swift in Sources */,
+				84D00665234FFA180079966C /* CGPoint.swift in Sources */,
 				844CA896234DDB72004593AA /* ARScreenPresenter.swift in Sources */,
 				844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */,
 				844CA897234DDB72004593AA /* ARScreenRouter.swift in Sources */,
 				844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */,
 				8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */,
 				844CA895234DDB72004593AA /* ARScreenInterfaces.swift in Sources */,
+				84D0065F234FF9890079966C /* FocusSquareSegment.swift in Sources */,
+				84D00663234FF9E80079966C /* Float.swift in Sources */,
+				84D00653234FF7C30079966C /* VirtualObjectLoader.swift in Sources */,
 				844CA898234DDB72004593AA /* ARScreenViewController.swift in Sources */,
+				84D00660234FF9890079966C /* FocusSquare.swift in Sources */,
 				844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */,
 				8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */,
 			);
