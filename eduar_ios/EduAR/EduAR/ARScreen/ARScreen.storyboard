@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Status View Controller-->
+        <!--Screen Status View Controller-->
         <scene sceneID="5Tw-8P-01p">
             <objects>
-                <viewController id="ri3-7p-e6d" customClass="StatusViewController" customModule="EduAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ri3-7p-e6d" customClass="ARScreenStatusViewController" customModule="EduAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAa-Gm-0Pa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,12 +97,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9h-Vm-ZUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="-280.20989505247377"/>
+            <point key="canvasLocation" x="892" y="163"/>
         </scene>
         <!--Screen View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ARScreenViewController" customModule="EduAR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ARScreenViewController" id="BV1-FR-VrT" customClass="ARScreenViewController" customModule="EduAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLh-bf-1c3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="98.50074962518741"/>
+            <point key="canvasLocation" x="-14" y="164"/>
         </scene>
     </scenes>
     <resources>
