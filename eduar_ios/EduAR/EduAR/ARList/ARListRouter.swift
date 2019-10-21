@@ -30,5 +30,10 @@ final class ARListRouter: RouterInterface {
 extension ARListRouter: ARListRouterInterface {
 
     func navigate(to option: ARListNavigationOption) {
+        switch option {
+        case .arScreen:
+            let vc = ARScreenBuilder().main()
+            self._view?.navigationController?.present(vc, animated: true, completion: nil)
+        }
     }
 }

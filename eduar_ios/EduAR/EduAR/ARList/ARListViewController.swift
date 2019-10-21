@@ -26,46 +26,46 @@ final class ARListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _setupView()
-//        _presenter.viewDidLoad()
+        _presenter?.viewDidLoad()
     }
 	
     // MARK: - Setup Initial View
     private func _setupView() {
         // Write your initial setup here
-        setupTableView()
-        overrideUserInterfaceStyle = .dark
-        data.append(ARData(image: "", title: "JATIWARNA"))
-        data.append(ARData(image: "", title: "EMERALD TOWER"))
-    }
-    
-    @IBOutlet weak var tableView: UITableView!
-    var data: [ARData] = []
-}
-
-extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ARListCell", for: indexPath as IndexPath) as! ARListCell
-        cell.setup(data: data[indexPath.row])
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-}
-
-// MARK: - Extensions -
-extension ARListViewController: ARListViewInterface {
-    func setupTableView() {
         tableView.register(UINib(nibName: "ARListCell", bundle: .main), forCellReuseIdentifier: "ARListCell")
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 40
         tableView.delegate = self
         tableView.dataSource = self
+        overrideUserInterfaceStyle = .dark
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
+}
+
+extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let arDatas = _presenter?.getARList() else {
+            return 0
+        }
+        return arDatas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ARListCell", for: indexPath as IndexPath) as! ARListCell
+        cell.setup(data: (_presenter?.getARList()[indexPath.row])!)
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        _presenter?.onTapRowAtIndex()
+    }
+}
+
+// MARK: - Extensions -
+extension ARListViewController: ARListViewInterface {
+    func reloadData() {
+        tableView.reloadData()
     }
 }

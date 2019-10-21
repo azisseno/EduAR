@@ -13,6 +13,7 @@ import UIKit
 import Common
 
 enum ARListNavigationOption {
+    case arScreen
 }
 
 protocol ARListRouterInterface: RouterInterface {
@@ -20,12 +21,15 @@ protocol ARListRouterInterface: RouterInterface {
 }
 
 protocol ARListViewInterface: ViewInterface {
-    func setupTableView()
+    func reloadData()
 }
 
 protocol ARListPresenterInterface: PresenterInterface {
-    func openDetail()
+    func arListFetched(arDatas: [ARData])
+    func getARList() -> [ARData]
+    func onTapRowAtIndex()
 }
 
 protocol ARListInteractorInterface: InteractorInterface {
+    func fetchARList()
 }
