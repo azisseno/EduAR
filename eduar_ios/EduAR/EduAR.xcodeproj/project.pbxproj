@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825312C7235DB3B200D15967 /* ARList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825312C0235DB3B200D15967 /* ARList.storyboard */; };
+		825312C8235DB3B200D15967 /* ARListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C1235DB3B200D15967 /* ARListInterfaces.swift */; };
+		825312C9235DB3B200D15967 /* ARListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C2235DB3B200D15967 /* ARListPresenter.swift */; };
+		825312CA235DB3B200D15967 /* ARListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C3235DB3B200D15967 /* ARListRouter.swift */; };
+		825312CB235DB3B200D15967 /* ARListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C4235DB3B200D15967 /* ARListViewController.swift */; };
+		825312CC235DB3B200D15967 /* ARListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C5235DB3B200D15967 /* ARListBuilder.swift */; };
+		825312CD235DB3B200D15967 /* ARListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C6235DB3B200D15967 /* ARListInteractor.swift */; };
+		825312CF235DB58500D15967 /* ARListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825312CE235DB58500D15967 /* ARListCell.xib */; };
+		825312D1235DB70C00D15967 /* ARListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312D0235DB70C00D15967 /* ARListCell.swift */; };
 		8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90B234D887700E78AF1 /* AppDelegate.swift */; };
 		8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90D234D887700E78AF1 /* SceneDelegate.swift */; };
 		8414C913234D887700E78AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C911234D887700E78AF1 /* Main.storyboard */; };
@@ -65,6 +74,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		825312C0235DB3B200D15967 /* ARList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARList.storyboard; sourceTree = "<group>"; };
+		825312C1235DB3B200D15967 /* ARListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListInterfaces.swift; sourceTree = "<group>"; };
+		825312C2235DB3B200D15967 /* ARListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListPresenter.swift; sourceTree = "<group>"; };
+		825312C3235DB3B200D15967 /* ARListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListRouter.swift; sourceTree = "<group>"; };
+		825312C4235DB3B200D15967 /* ARListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListViewController.swift; sourceTree = "<group>"; };
+		825312C5235DB3B200D15967 /* ARListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListBuilder.swift; sourceTree = "<group>"; };
+		825312C6235DB3B200D15967 /* ARListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListInteractor.swift; sourceTree = "<group>"; };
+		825312CE235DB58500D15967 /* ARListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARListCell.xib; sourceTree = "<group>"; };
+		825312D0235DB70C00D15967 /* ARListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListCell.swift; sourceTree = "<group>"; };
 		8414C908234D887700E78AF1 /* EduAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414C90B234D887700E78AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8414C90D234D887700E78AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +139,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		825312BF235DB37F00D15967 /* ARList */ = {
+			isa = PBXGroup;
+			children = (
+				825312C0235DB3B200D15967 /* ARList.storyboard */,
+				825312CE235DB58500D15967 /* ARListCell.xib */,
+				825312D0235DB70C00D15967 /* ARListCell.swift */,
+				825312C1235DB3B200D15967 /* ARListInterfaces.swift */,
+				825312C2235DB3B200D15967 /* ARListPresenter.swift */,
+				825312C3235DB3B200D15967 /* ARListRouter.swift */,
+				825312C4235DB3B200D15967 /* ARListViewController.swift */,
+				825312C5235DB3B200D15967 /* ARListBuilder.swift */,
+				825312C6235DB3B200D15967 /* ARListInteractor.swift */,
+			);
+			path = ARList;
+			sourceTree = "<group>";
+		};
 		8414C8FF234D887700E78AF1 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +179,7 @@
 			children = (
 				CDB634C8235616BC00B7E603 /* Resources */,
 				84D00661234FF9D80079966C /* Extensions */,
+				825312BF235DB37F00D15967 /* ARList */,
 				844CA85C234DD8EB004593AA /* ARScreen */,
 				8414C90B234D887700E78AF1 /* AppDelegate.swift */,
 				8414C90D234D887700E78AF1 /* SceneDelegate.swift */,
@@ -316,9 +351,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				825312CF235DB58500D15967 /* ARListCell.xib in Resources */,
 				8414C918234D887800E78AF1 /* LaunchScreen.storyboard in Resources */,
 				844CA894234DDB72004593AA /* ARScreen.storyboard in Resources */,
 				8414C915234D887800E78AF1 /* Assets.xcassets in Resources */,
+				825312C7235DB3B200D15967 /* ARList.storyboard in Resources */,
 				CDE651BA23562A1E00F1B74C /* Models.scnassets in Resources */,
 				8414C913234D887700E78AF1 /* Main.storyboard in Resources */,
 			);
@@ -342,6 +379,7 @@
 				84D0065B234FF9310079966C /* ThresholdPanGesture.swift in Sources */,
 				CDB634C7235614C800B7E603 /* ARScreenViewController+ObjectSelection.swift in Sources */,
 				84D00652234FF7C30079966C /* VirtualObject.swift in Sources */,
+				825312C8235DB3B200D15967 /* ARListInterfaces.swift in Sources */,
 				84D0065A234FF9310079966C /* VirtualObjectInteraction.swift in Sources */,
 				84D00667234FFE2D0079966C /* ARScreenStatusViewController.swift in Sources */,
 				84D00665234FFA180079966C /* CGPoint.swift in Sources */,
@@ -349,18 +387,24 @@
 				844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */,
 				CD8FA0662355D04200113792 /* ARScreenViewController+CoachingOverlay.swift in Sources */,
 				CD8FA0642355CEFE00113792 /* ARScreenViewController+ARSCNViewDelegate.swift in Sources */,
+				825312CC235DB3B200D15967 /* ARListBuilder.swift in Sources */,
 				844CA897234DDB72004593AA /* ARScreenRouter.swift in Sources */,
+				825312C9235DB3B200D15967 /* ARListPresenter.swift in Sources */,
 				844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */,
 				8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */,
 				844CA895234DDB72004593AA /* ARScreenInterfaces.swift in Sources */,
 				84D0065F234FF9890079966C /* FocusSquareSegment.swift in Sources */,
 				84D00663234FF9E80079966C /* Float.swift in Sources */,
+				825312CA235DB3B200D15967 /* ARListRouter.swift in Sources */,
 				84D00653234FF7C30079966C /* VirtualObjectLoader.swift in Sources */,
+				825312D1235DB70C00D15967 /* ARListCell.swift in Sources */,
 				CD8FA0682355D0E100113792 /* ARScreenViewController+Actions.swift in Sources */,
 				844CA898234DDB72004593AA /* ARScreenViewController.swift in Sources */,
 				84D00660234FF9890079966C /* FocusSquare.swift in Sources */,
 				844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */,
+				825312CB235DB3B200D15967 /* ARListViewController.swift in Sources */,
 				8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */,
+				825312CD235DB3B200D15967 /* ARListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

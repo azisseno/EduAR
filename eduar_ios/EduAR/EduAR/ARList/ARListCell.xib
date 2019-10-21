@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="340" id="pf5-gB-HjQ" customClass="ARListCell" customModule="EduAR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="340"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pf5-gB-HjQ" id="HED-ub-ABt">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="339.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWh-yf-fJO">
+                        <rect key="frame" x="16" y="16" width="500" height="274.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LX-y9-eS7">
+                        <rect key="frame" x="10" y="306.5" width="512" height="21"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3LX-y9-eS7" secondAttribute="trailing" constant="10" id="8So-3x-K2O"/>
+                    <constraint firstItem="3LX-y9-eS7" firstAttribute="top" secondItem="SWh-yf-fJO" secondAttribute="bottom" constant="16" id="BHv-EH-aT5"/>
+                    <constraint firstItem="3LX-y9-eS7" firstAttribute="leading" secondItem="HED-ub-ABt" secondAttribute="leading" constant="10" id="BOV-3s-DjY"/>
+                    <constraint firstItem="SWh-yf-fJO" firstAttribute="leading" secondItem="HED-ub-ABt" secondAttribute="leading" constant="16" id="cp4-7w-F98"/>
+                    <constraint firstAttribute="trailing" secondItem="SWh-yf-fJO" secondAttribute="trailing" constant="16" id="nkc-l1-iqD"/>
+                    <constraint firstItem="SWh-yf-fJO" firstAttribute="top" secondItem="HED-ub-ABt" secondAttribute="top" constant="16" id="sko-pO-lib"/>
+                    <constraint firstAttribute="bottom" secondItem="3LX-y9-eS7" secondAttribute="bottom" constant="12" id="xth-j7-6QM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="SWh-yf-fJO" id="D8Z-Yi-3sC"/>
+                <outlet property="titleLabel" destination="3LX-y9-eS7" id="JOs-cL-NSJ"/>
+            </connections>
+            <point key="canvasLocation" x="142.02898550724638" y="107.14285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
