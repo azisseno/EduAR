@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,14 +12,14 @@
             <rect key="frame" x="0.0" y="0.0" width="532" height="340"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pf5-gB-HjQ" id="HED-ub-ABt">
-                <rect key="frame" x="0.0" y="0.0" width="532" height="339.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="532" height="340"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWh-yf-fJO">
-                        <rect key="frame" x="16" y="16" width="500" height="274.5"/>
+                        <rect key="frame" x="16" y="16" width="500" height="275"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LX-y9-eS7">
-                        <rect key="frame" x="10" y="306.5" width="512" height="21"/>
+                        <rect key="frame" x="10" y="307" width="512" height="21"/>
                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -39,7 +36,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageView" destination="SWh-yf-fJO" id="D8Z-Yi-3sC"/>
+                <outlet property="imageProduct" destination="SWh-yf-fJO" id="4TD-lx-Tch"/>
                 <outlet property="titleLabel" destination="3LX-y9-eS7" id="JOs-cL-NSJ"/>
             </connections>
             <point key="canvasLocation" x="142.02898550724638" y="107.14285714285714"/>

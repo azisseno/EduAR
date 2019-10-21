@@ -15,7 +15,7 @@ struct ARData {
 
 class ARListCell: UITableViewCell {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageProduct: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
@@ -24,6 +24,6 @@ class ARListCell: UITableViewCell {
     
     func setup(data: ARData) {
         titleLabel.text = data.title
-        imageView.image = UIImage(named: data.image)
+        imageProduct.image = UIImage(named: data.image ?? "")
     }
 }

@@ -26,7 +26,7 @@ final class ARListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         _setupView()
-        _presenter.viewDidLoad()
+//        _presenter.viewDidLoad()
     }
 	
     // MARK: - Setup Initial View
@@ -34,7 +34,6 @@ final class ARListViewController: UIViewController {
         // Write your initial setup here
         setupTableView()
         overrideUserInterfaceStyle = .dark
-        self.title = "IIIC"
         data.append(ARData(image: "", title: "JATIWARNA"))
         data.append(ARData(image: "", title: "EMERALD TOWER"))
     }
@@ -66,5 +65,7 @@ extension ARListViewController: ARListViewInterface {
         tableView.separatorStyle = .none
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 40
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
