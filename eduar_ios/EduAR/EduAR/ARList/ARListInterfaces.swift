@@ -18,6 +18,7 @@ struct ARListConstant {
 
 enum ARListNavigationOption {
     case arScreen(ARData)
+    case errorScreen
 }
 
 protocol ARListRouterInterface: RouterInterface {
@@ -37,6 +38,6 @@ protocol ARListPresenterInterface: PresenterInterface {
 
 protocol ARListInteractorInterface: InteractorInterface {
     func fetchARList() -> [ARData]
-    func checkRemoteConfigAppEnabled()
+    func checkRemoteConfigAppEnabled(completion: (() -> ())?)
     func appEnabled() -> Bool
 }

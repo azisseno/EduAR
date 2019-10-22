@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		825312CD235DB3B200D15967 /* ARListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C6235DB3B200D15967 /* ARListInteractor.swift */; };
 		825312CF235DB58500D15967 /* ARListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825312CE235DB58500D15967 /* ARListCell.xib */; };
 		825312D1235DB70C00D15967 /* ARListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312D0235DB70C00D15967 /* ARListCell.swift */; };
+		8281FB31235F031C00CB015A /* ErrorView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8281FB2A235F031C00CB015A /* ErrorView.storyboard */; };
+		8281FB32235F031C00CB015A /* ErrorViewInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB2B235F031C00CB015A /* ErrorViewInterfaces.swift */; };
+		8281FB33235F031C00CB015A /* ErrorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB2C235F031C00CB015A /* ErrorViewPresenter.swift */; };
+		8281FB34235F031C00CB015A /* ErrorViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB2D235F031C00CB015A /* ErrorViewRouter.swift */; };
+		8281FB35235F031C00CB015A /* ErrorViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB2E235F031C00CB015A /* ErrorViewViewController.swift */; };
+		8281FB36235F031C00CB015A /* ErrorViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB2F235F031C00CB015A /* ErrorViewBuilder.swift */; };
+		8281FB37235F031C00CB015A /* ErrorViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281FB30235F031C00CB015A /* ErrorViewInteractor.swift */; };
 		84118AE4235EC78000C9FD78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84118AE3235EC78000C9FD78 /* GoogleService-Info.plist */; };
 		8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90B234D887700E78AF1 /* AppDelegate.swift */; };
 		8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90D234D887700E78AF1 /* SceneDelegate.swift */; };
@@ -90,6 +97,13 @@
 		825312C6235DB3B200D15967 /* ARListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListInteractor.swift; sourceTree = "<group>"; };
 		825312CE235DB58500D15967 /* ARListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARListCell.xib; sourceTree = "<group>"; };
 		825312D0235DB70C00D15967 /* ARListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListCell.swift; sourceTree = "<group>"; };
+		8281FB2A235F031C00CB015A /* ErrorView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ErrorView.storyboard; sourceTree = "<group>"; };
+		8281FB2B235F031C00CB015A /* ErrorViewInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewInterfaces.swift; sourceTree = "<group>"; };
+		8281FB2C235F031C00CB015A /* ErrorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewPresenter.swift; sourceTree = "<group>"; };
+		8281FB2D235F031C00CB015A /* ErrorViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewRouter.swift; sourceTree = "<group>"; };
+		8281FB2E235F031C00CB015A /* ErrorViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewViewController.swift; sourceTree = "<group>"; };
+		8281FB2F235F031C00CB015A /* ErrorViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewBuilder.swift; sourceTree = "<group>"; };
+		8281FB30235F031C00CB015A /* ErrorViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewInteractor.swift; sourceTree = "<group>"; };
 		84118AE3235EC78000C9FD78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8414C908234D887700E78AF1 /* EduAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414C90B234D887700E78AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +181,20 @@
 			path = ARList;
 			sourceTree = "<group>";
 		};
+		8281FB29235F02C500CB015A /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				8281FB2A235F031C00CB015A /* ErrorView.storyboard */,
+				8281FB2B235F031C00CB015A /* ErrorViewInterfaces.swift */,
+				8281FB2C235F031C00CB015A /* ErrorViewPresenter.swift */,
+				8281FB2D235F031C00CB015A /* ErrorViewRouter.swift */,
+				8281FB2E235F031C00CB015A /* ErrorViewViewController.swift */,
+				8281FB2F235F031C00CB015A /* ErrorViewBuilder.swift */,
+				8281FB30235F031C00CB015A /* ErrorViewInteractor.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 		8414C8FF234D887700E78AF1 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +220,7 @@
 			children = (
 				CDB634C8235616BC00B7E603 /* Resources */,
 				84D00661234FF9D80079966C /* Extensions */,
+				8281FB29235F02C500CB015A /* ErrorView */,
 				825312BF235DB37F00D15967 /* ARList */,
 				844CA85C234DD8EB004593AA /* ARScreen */,
 				8414C90B234D887700E78AF1 /* AppDelegate.swift */,
@@ -387,6 +416,7 @@
 				844CA894234DDB72004593AA /* ARScreen.storyboard in Resources */,
 				8414C915234D887800E78AF1 /* Assets.xcassets in Resources */,
 				825312C7235DB3B200D15967 /* ARList.storyboard in Resources */,
+				8281FB31235F031C00CB015A /* ErrorView.storyboard in Resources */,
 				CDE651BA23562A1E00F1B74C /* Models.scnassets in Resources */,
 				8414C913234D887700E78AF1 /* Main.storyboard in Resources */,
 			);
@@ -464,20 +494,26 @@
 				844CA896234DDB72004593AA /* ARScreenPresenter.swift in Sources */,
 				844CA89A234DDB72004593AA /* ARScreenInteractor.swift in Sources */,
 				CD8FA0662355D04200113792 /* ARScreenViewController+CoachingOverlay.swift in Sources */,
+				8281FB34235F031C00CB015A /* ErrorViewRouter.swift in Sources */,
 				CD8FA0642355CEFE00113792 /* ARScreenViewController+ARSCNViewDelegate.swift in Sources */,
 				825312CC235DB3B200D15967 /* ARListBuilder.swift in Sources */,
 				844CA897234DDB72004593AA /* ARScreenRouter.swift in Sources */,
 				825312C9235DB3B200D15967 /* ARListPresenter.swift in Sources */,
 				844CA899234DDB72004593AA /* ARScreenBuilder.swift in Sources */,
+				8281FB33235F031C00CB015A /* ErrorViewPresenter.swift in Sources */,
 				8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */,
 				844CA895234DDB72004593AA /* ARScreenInterfaces.swift in Sources */,
 				84D0065F234FF9890079966C /* FocusSquareSegment.swift in Sources */,
+				8281FB36235F031C00CB015A /* ErrorViewBuilder.swift in Sources */,
 				84D00663234FF9E80079966C /* Float.swift in Sources */,
 				825312CA235DB3B200D15967 /* ARListRouter.swift in Sources */,
 				84D00653234FF7C30079966C /* VirtualObjectLoader.swift in Sources */,
+				8281FB32235F031C00CB015A /* ErrorViewInterfaces.swift in Sources */,
 				825312D1235DB70C00D15967 /* ARListCell.swift in Sources */,
 				CD8FA0682355D0E100113792 /* ARScreenViewController+Actions.swift in Sources */,
+				8281FB37235F031C00CB015A /* ErrorViewInteractor.swift in Sources */,
 				844CA898234DDB72004593AA /* ARScreenViewController.swift in Sources */,
+				8281FB35235F031C00CB015A /* ErrorViewViewController.swift in Sources */,
 				84D00660234FF9890079966C /* FocusSquare.swift in Sources */,
 				844CA89C234ECA5F004593AA /* TestViewController.swift in Sources */,
 				825312CB235DB3B200D15967 /* ARListViewController.swift in Sources */,

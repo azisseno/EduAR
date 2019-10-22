@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Lf-Fd-VFd">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Error View View Controller-->
+        <scene sceneID="4mA-m4-mEh">
+            <objects>
+                <viewController storyboardIdentifier="ErrorViewViewController" id="3Lf-Fd-VFd" customClass="ErrorViewViewController" customModule="EduAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M5Z-WN-fQa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your app is disabled, please connect to internet and retry. Or Contact your vendor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i73-dQ-aJq">
+                                <rect key="frame" x="24" y="284.5" width="327" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lby-8X-W1Q">
+                                <rect key="frame" x="24" y="341.5" width="327" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="X0t-h8-0ge"/>
+                                </constraints>
+                                <state key="normal" title="Retry"/>
+                                <connections>
+                                    <action selector="retryPressed:" destination="3Lf-Fd-VFd" eventType="touchUpInside" id="HAC-rs-KxI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lby-8X-W1Q" firstAttribute="top" secondItem="M5Z-WN-fQa" secondAttribute="centerY" constant="8" id="4Hu-uc-jtm"/>
+                            <constraint firstItem="Svf-PW-VdF" firstAttribute="trailing" secondItem="i73-dQ-aJq" secondAttribute="trailing" constant="24" id="EYQ-fD-sgv"/>
+                            <constraint firstItem="Svf-PW-VdF" firstAttribute="trailing" secondItem="lby-8X-W1Q" secondAttribute="trailing" constant="24" id="Fbb-VX-tgb"/>
+                            <constraint firstItem="i73-dQ-aJq" firstAttribute="leading" secondItem="Svf-PW-VdF" secondAttribute="leading" constant="24" id="Mnh-fR-lqe"/>
+                            <constraint firstAttribute="centerY" secondItem="i73-dQ-aJq" secondAttribute="bottom" constant="8" id="NCR-pZ-o9I"/>
+                            <constraint firstItem="lby-8X-W1Q" firstAttribute="leading" secondItem="Svf-PW-VdF" secondAttribute="leading" constant="24" id="y2x-js-q72"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Svf-PW-VdF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LF4-DG-aVT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-441" y="303"/>
+        </scene>
+    </scenes>
+</document>

@@ -40,15 +40,20 @@ final class ARListPresenter {
     }
     
     func viewWillAppear(animated: Bool) {
+        _checkEnableDisableApp()
+    }
+    
+    private func _checkEnableDisableApp() {
+        _interactor.checkRemoteConfigAppEnabled { [weak self] in
+            guard let `self` = self else { return }
+            self._enableDisableApp()
+        }
         _enableDisableApp()
     }
     
     private func _enableDisableApp() {
-        _interactor.checkRemoteConfigAppEnabled()
-        if _interactor.appEnabled() {
-            print("ENABLE!!!")
-        } else {
-            print("KONTOL!!!")
+        if !_interactor.appEnabled() {
+            _router?.navigate(to: .errorScreen)
         }
     }
 }
@@ -65,10 +70,11 @@ extension ARListPresenter: ARListPresenterInterface {
     }
     
     func onTapList(atIndex index: Int) {
+        _checkEnableDisableApp()
         _router?.navigate(to: .arScreen(arDatas[index]))
     }
     
     func onModaDismiss() {
-        _enableDisableApp()
+        _checkEnableDisableApp()
     }
 }

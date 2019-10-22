@@ -1,8 +1,8 @@
 //
-//  ARListInteractor.swift
+//  ErrorViewInteractor.swift
 //  EduAR
 //
-//  Created by Chandra Welim on 21/10/19.
+//  Created by ven5ch on 22/10/19.
 //  Copyright © 2019 iic. All rights reserved.
 //
 //
@@ -13,19 +13,12 @@ import Foundation
 import Common
 import Firebase
 
-final class ARListInteractor { }
+final class ErrorViewInteractor {
+}
 
 // MARK: - Extensions -
-extension ARListInteractor: ARListInteractorInterface {
+extension ErrorViewInteractor: ErrorViewInteractorInterface {
     
-    func fetchARList() -> [ARData]  {
-        let arDatas: [ARData] = [
-            ARData(image: "jatiwarna", title: "JATIWARNA", index: 0),
-            ARData(image: "emerald", title: "EMERALD TOWER", index: 1)
-        ]
-        return arDatas
-    }
-
     func checkRemoteConfigAppEnabled(completion: (() -> ())?) {
         var ref: DatabaseReference!
         ref = Database.database().reference()
