@@ -63,7 +63,7 @@ extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.width / 2
+        return (UIScreen.main.bounds.height - 120) / 2
     }
 }
 
