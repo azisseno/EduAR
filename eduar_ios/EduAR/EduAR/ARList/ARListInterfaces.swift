@@ -32,6 +32,7 @@ protocol ARListPresenterInterface: PresenterInterface {
     func numberOfRows() -> Int
     func getArData(atIndex index: Int) -> ARData
     func onTapList(atIndex index: Int)
+    func onModaDismiss()
 }
 
 protocol ARListInteractorInterface: InteractorInterface {

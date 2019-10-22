@@ -32,7 +32,7 @@ extension ARListRouter: ARListRouterInterface {
     func navigate(to option: ARListNavigationOption) {
         switch option {
         case .arScreen(let data):
-            let vc = ARScreenBuilder().main(data: data)
+            let vc = ARScreenBuilder().main(data: data, adaptiveDelegate: _view)
             self._view?.navigationController?.present(vc, animated: true, completion: nil)
         }
     }

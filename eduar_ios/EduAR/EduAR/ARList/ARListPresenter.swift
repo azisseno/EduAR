@@ -40,6 +40,10 @@ final class ARListPresenter {
     }
     
     func viewWillAppear(animated: Bool) {
+        _enableDisableApp()
+    }
+    
+    private func _enableDisableApp() {
         _interactor.checkRemoteConfigAppEnabled()
         if _interactor.appEnabled() {
             print("ENABLE!!!")
@@ -62,5 +66,9 @@ extension ARListPresenter: ARListPresenterInterface {
     
     func onTapList(atIndex index: Int) {
         _router?.navigate(to: .arScreen(arDatas[index]))
+    }
+    
+    func onModaDismiss() {
+        _enableDisableApp()
     }
 }

@@ -71,3 +71,9 @@ extension ARListViewController: ARListViewInterface {
         tableView.reloadData()
     }
 }
+
+extension ARListViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        _presenter.onModaDismiss()
+    }
+}
