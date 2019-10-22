@@ -12,19 +12,16 @@
 import Foundation
 import Common
 
-final class ARListInteractor {
-    
-    weak var presenter: ARListPresenterInterface!
-}
+final class ARListInteractor { }
 
 // MARK: - Extensions -
 extension ARListInteractor: ARListInteractorInterface {
     
-    func fetchARList() {
+    func fetchARList() -> [ARData]  {
         let arDatas: [ARData] = [
             ARData(image: "", title: "JATIWARNA"),
             ARData(image: "", title: "EMERALD TOWER")
         ]
-        presenter.arListFetched(arDatas: arDatas)
+        return arDatas
     }
 }

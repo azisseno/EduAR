@@ -40,7 +40,7 @@ extension ARScreenBuilderInterface {
         return ARScreenRouter()
     }
     
-    func main() -> UIViewController {
+    func main(data: ARData) -> UIViewController {
         let router: ARScreenRouterInterface = resolve()
         let presenter: ARScreenPresenterInterface = resolve()
         presenter.set(router: router)

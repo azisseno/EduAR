@@ -35,23 +35,23 @@ final class ARListPresenter {
     }
     
     func viewDidLoad() {
-        _interactor.fetchARList()
+        arDatas = _interactor.fetchARList()
+        _view?.reloadTableView()
     }
 }
 
 // MARK: - Extensions -
 extension ARListPresenter: ARListPresenterInterface {
         
-    func arListFetched(arDatas: [ARData]) {
-        self.arDatas = arDatas
-        _view?.reloadData()
+    func numberOfRows() -> Int {
+        return arDatas.count
     }
     
-    func getARList() -> [ARData] {
-        return arDatas
+    func getArData(atIndex index: Int) -> ARData {
+        return arDatas[index]
     }
     
-    func onTapRowAtIndex() {
-        _router?.navigate(to: .arScreen)
+    func onTapList(atIndex index: Int) {
+        _router?.navigate(to: .arScreen(arDatas[index]))
     }
 }

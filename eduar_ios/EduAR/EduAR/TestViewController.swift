@@ -15,12 +15,7 @@ class TestViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func onTapButton(_ sender: Any) {
-        let vc = ARScreenBuilder().main()
-        present(vc, animated: true, completion: nil)
-    }
-    
+        
     /*
     // MARK: - Navigation
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q01-ge-GtU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zIc-eW-6fX">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBQ-tx-jng">
-                                <rect key="frame" x="0.0" y="44" width="375" height="38"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please choose model you want to show" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbL-Rt-zF9">
                                         <rect key="frame" x="16" y="8" width="343" height="22"/>
@@ -35,7 +35,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-jD-mad">
-                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                                <rect key="frame" x="0.0" y="38" width="375" height="629"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -59,24 +59,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1244" y="302.6986506746627"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7lu-fF-O5i">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q01-ge-GtU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VxJ-9O-bMk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zIc-eW-6fX" kind="relationship" relationship="rootViewController" id="FCV-PF-tta"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F5i-FI-ef2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="304.80000000000001" y="302.6986506746627"/>
         </scene>
     </scenes>
 </document>

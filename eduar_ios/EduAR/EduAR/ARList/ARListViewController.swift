@@ -46,26 +46,23 @@ final class ARListViewController: UIViewController {
 
 extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let arDatas = _presenter?.getARList() else {
-            return 0
-        }
-        return arDatas.count
+        return _presenter.numberOfRows()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ARListCell", for: indexPath as IndexPath) as! ARListCell
-        cell.setup(data: (_presenter?.getARList()[indexPath.row])!)
+        cell.setup(data: _presenter.getArData(atIndex: indexPath.row))
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        _presenter?.onTapRowAtIndex()
+        _presenter.onTapList(atIndex: indexPath.row)
     }
 }
 
 // MARK: - Extensions -
 extension ARListViewController: ARListViewInterface {
-    func reloadData() {
+    func reloadTableView() {
         tableView.reloadData()
     }
 }

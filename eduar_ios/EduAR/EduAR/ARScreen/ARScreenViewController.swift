@@ -23,6 +23,8 @@ final class ARScreenViewController: UIViewController {
         _presenter = presenter
     }
     
+    var virtualObject: VirtualObject!
+
     // MARK: - View Controller Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,7 +102,7 @@ final class ARScreenViewController: UIViewController {
 
 // MARK: - Extensions from interface
 extension ARScreenViewController: ARScreenViewInterface {
-    
+        
     var session: ARSession {
         return sceneView.session
     }
