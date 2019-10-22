@@ -63,6 +63,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowDown" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-8s-IVw">
+                                <rect key="frame" x="274" y="21.5" width="49" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="xIr-2T-Wtp"/>
+                                    <constraint firstAttribute="height" constant="29" id="y6D-xN-aqn"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSK-t0-G4r" userLabel="Restart Experience Button Icon">
                                 <rect key="frame" x="331" y="0.0" width="44" height="59"/>
                                 <constraints>
@@ -82,14 +89,17 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aSK-t0-G4r" firstAttribute="top" secondItem="wYK-n4-ypp" secondAttribute="top" id="00T-V7-ZZG"/>
-                            <constraint firstItem="aSK-t0-G4r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1uT-CF-YpX" secondAttribute="trailing" constant="8" id="7s3-gZ-Vdh"/>
+                            <constraint firstItem="aSK-t0-G4r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1uT-CF-YpX" secondAttribute="trailing" constant="64" id="7s3-gZ-Vdh"/>
                             <constraint firstItem="wYK-n4-ypp" firstAttribute="trailing" secondItem="aSK-t0-G4r" secondAttribute="trailing" id="AKH-fs-H3Q"/>
                             <constraint firstItem="1uT-CF-YpX" firstAttribute="leading" secondItem="wYK-n4-ypp" secondAttribute="leading" constant="16" id="EfQ-ka-33s"/>
                             <constraint firstItem="1uT-CF-YpX" firstAttribute="top" secondItem="aSK-t0-G4r" secondAttribute="top" constant="20" id="J9G-Za-9yG"/>
+                            <constraint firstItem="N0c-8s-IVw" firstAttribute="centerY" secondItem="1uT-CF-YpX" secondAttribute="centerY" id="LvX-iE-Log"/>
+                            <constraint firstItem="aSK-t0-G4r" firstAttribute="leading" secondItem="N0c-8s-IVw" secondAttribute="trailing" constant="8" id="w9p-TS-kIc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wYK-n4-ypp"/>
                     </view>
                     <connections>
+                        <outlet property="arrowDownImage" destination="N0c-8s-IVw" id="naG-ta-vXz"/>
                         <outlet property="messageLabel" destination="x6b-bh-aZK" id="103-E5-rNP"/>
                         <outlet property="messagePanel" destination="1uT-CF-YpX" id="taj-MT-abc"/>
                         <outlet property="restartExperienceButton" destination="aSK-t0-G4r" id="T3U-OD-TP3"/>
@@ -97,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9h-Vm-ZUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="163"/>
+            <point key="canvasLocation" x="917.60000000000002" y="156.97151424287858"/>
         </scene>
         <!--Screen View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -182,6 +192,7 @@
     </scenes>
     <resources>
         <image name="add" width="48" height="48"/>
+        <image name="arrowDown" width="49" height="19"/>
         <image name="restart" width="20" height="20"/>
         <image name="restartPressed" width="20" height="20"/>
     </resources>

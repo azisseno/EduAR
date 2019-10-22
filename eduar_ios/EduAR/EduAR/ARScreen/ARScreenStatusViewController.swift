@@ -33,8 +33,21 @@ class ARScreenStatusViewController: UIViewController {
     @IBOutlet weak private var messageLabel: UILabel!
     
     @IBOutlet weak private var restartExperienceButton: UIButton!
+    
+    @IBOutlet weak var arrowDownImage: UIImageView!
 
     // MARK: - Properties
+  
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1, animations: {
+            self.arrowDownImage.frame.origin.y -= 10
+        }) { _ in
+            UIView.animateKeyframes(withDuration: 1, delay: 0.25, options: [.autoreverse, .repeat], animations: {
+                self.arrowDownImage.frame.origin.y += 10
+            })
+        }
+    }
     
     /// Trigerred when the "Restart Experience" button is tapped.
     var restartExperienceHandler: () -> Void = {}
