@@ -38,6 +38,15 @@ final class ARListPresenter {
         arDatas = _interactor.fetchARList()
         _view?.reloadTableView()
     }
+    
+    func viewWillAppear(animated: Bool) {
+        _interactor.checkRemoteConfigAppEnabled()
+        if _interactor.appEnabled() {
+            print("ENABLE!!!")
+        } else {
+            print("KONTOL!!!")
+        }
+    }
 }
 
 // MARK: - Extensions -

@@ -12,6 +12,10 @@
 import UIKit
 import Common
 
+struct ARListConstant {
+    static let appEnable: String = "configmmkau"
+}
+
 enum ARListNavigationOption {
     case arScreen(ARData)
 }
@@ -32,4 +36,6 @@ protocol ARListPresenterInterface: PresenterInterface {
 
 protocol ARListInteractorInterface: InteractorInterface {
     func fetchARList() -> [ARData]
+    func checkRemoteConfigAppEnabled()
+    func appEnabled() -> Bool
 }

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		102CA83AC221E29E3DBC5AD0 /* libPods-EduARTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 174F832C17354BC1E991F32C /* libPods-EduARTests.a */; };
 		825312C7235DB3B200D15967 /* ARList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825312C0235DB3B200D15967 /* ARList.storyboard */; };
 		825312C8235DB3B200D15967 /* ARListInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C1235DB3B200D15967 /* ARListInterfaces.swift */; };
 		825312C9235DB3B200D15967 /* ARListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C2235DB3B200D15967 /* ARListPresenter.swift */; };
@@ -16,6 +17,7 @@
 		825312CD235DB3B200D15967 /* ARListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312C6235DB3B200D15967 /* ARListInteractor.swift */; };
 		825312CF235DB58500D15967 /* ARListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825312CE235DB58500D15967 /* ARListCell.xib */; };
 		825312D1235DB70C00D15967 /* ARListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825312D0235DB70C00D15967 /* ARListCell.swift */; };
+		84118AE4235EC78000C9FD78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84118AE3235EC78000C9FD78 /* GoogleService-Info.plist */; };
 		8414C90C234D887700E78AF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90B234D887700E78AF1 /* AppDelegate.swift */; };
 		8414C90E234D887700E78AF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C90D234D887700E78AF1 /* SceneDelegate.swift */; };
 		8414C913234D887700E78AF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C911234D887700E78AF1 /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 		84D00663234FF9E80079966C /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00662234FF9E80079966C /* Float.swift */; };
 		84D00665234FFA180079966C /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00664234FFA180079966C /* CGPoint.swift */; };
 		84D00667234FFE2D0079966C /* ARScreenStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D00666234FFE2D0079966C /* ARScreenStatusViewController.swift */; };
+		B9B481E38F6628170D529327 /* libPods-EduAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 664045ED54889D6881BB730D /* libPods-EduAR.a */; };
 		CD8FA0642355CEFE00113792 /* ARScreenViewController+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FA0632355CEFE00113792 /* ARScreenViewController+ARSCNViewDelegate.swift */; };
 		CD8FA0662355D04200113792 /* ARScreenViewController+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FA0652355D04200113792 /* ARScreenViewController+CoachingOverlay.swift */; };
 		CD8FA0682355D0E100113792 /* ARScreenViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FA0672355D0E100113792 /* ARScreenViewController+Actions.swift */; };
@@ -74,6 +77,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		174F832C17354BC1E991F32C /* libPods-EduARTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EduARTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50300BEBA73D11D10DCC5710 /* Pods-EduAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduAR.release.xcconfig"; path = "Target Support Files/Pods-EduAR/Pods-EduAR.release.xcconfig"; sourceTree = "<group>"; };
+		664045ED54889D6881BB730D /* libPods-EduAR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EduAR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C905586453D42599364673 /* Pods-EduAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduAR.debug.xcconfig"; path = "Target Support Files/Pods-EduAR/Pods-EduAR.debug.xcconfig"; sourceTree = "<group>"; };
 		825312C0235DB3B200D15967 /* ARList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARList.storyboard; sourceTree = "<group>"; };
 		825312C1235DB3B200D15967 /* ARListInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListInterfaces.swift; sourceTree = "<group>"; };
 		825312C2235DB3B200D15967 /* ARListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListPresenter.swift; sourceTree = "<group>"; };
@@ -83,6 +90,7 @@
 		825312C6235DB3B200D15967 /* ARListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListInteractor.swift; sourceTree = "<group>"; };
 		825312CE235DB58500D15967 /* ARListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARListCell.xib; sourceTree = "<group>"; };
 		825312D0235DB70C00D15967 /* ARListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListCell.swift; sourceTree = "<group>"; };
+		84118AE3235EC78000C9FD78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8414C908234D887700E78AF1 /* EduAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EduAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8414C90B234D887700E78AF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8414C90D234D887700E78AF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,11 +121,13 @@
 		84D00662234FF9E80079966C /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		84D00664234FFA180079966C /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		84D00666234FFE2D0079966C /* ARScreenStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARScreenStatusViewController.swift; sourceTree = "<group>"; };
+		A9020C540A7F6C6B58E5B04F /* Pods-EduARTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduARTests.debug.xcconfig"; path = "Target Support Files/Pods-EduARTests/Pods-EduARTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD8FA0632355CEFE00113792 /* ARScreenViewController+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARScreenViewController+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
 		CD8FA0652355D04200113792 /* ARScreenViewController+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARScreenViewController+CoachingOverlay.swift"; sourceTree = "<group>"; };
 		CD8FA0672355D0E100113792 /* ARScreenViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARScreenViewController+Actions.swift"; sourceTree = "<group>"; };
 		CDB634C6235614C800B7E603 /* ARScreenViewController+ObjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARScreenViewController+ObjectSelection.swift"; sourceTree = "<group>"; };
 		CDE651B923562A1E00F1B74C /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		D0201F6725F9475237984B3A /* Pods-EduARTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EduARTests.release.xcconfig"; path = "Target Support Files/Pods-EduARTests/Pods-EduARTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844CA81D234DCBA7004593AA /* Common.framework in Frameworks */,
+				B9B481E38F6628170D529327 /* libPods-EduAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102CA83AC221E29E3DBC5AD0 /* libPods-EduARTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +174,7 @@
 				8414C921234D887900E78AF1 /* EduARTests */,
 				8414C909234D887700E78AF1 /* Products */,
 				844CA817234DCB94004593AA /* Frameworks */,
+				F20ABC25B45F2DA4D883C1A7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +218,8 @@
 			children = (
 				844CA81C234DCBA7004593AA /* Common.framework */,
 				844CA818234DCB94004593AA /* Common.framework */,
+				664045ED54889D6881BB730D /* libPods-EduAR.a */,
+				174F832C17354BC1E991F32C /* libPods-EduARTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,10 +278,23 @@
 		CDB634C8235616BC00B7E603 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84118AE3235EC78000C9FD78 /* GoogleService-Info.plist */,
 				8414C914234D887800E78AF1 /* Assets.xcassets */,
 				CDE651B923562A1E00F1B74C /* Models.scnassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F20ABC25B45F2DA4D883C1A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71C905586453D42599364673 /* Pods-EduAR.debug.xcconfig */,
+				50300BEBA73D11D10DCC5710 /* Pods-EduAR.release.xcconfig */,
+				A9020C540A7F6C6B58E5B04F /* Pods-EduARTests.debug.xcconfig */,
+				D0201F6725F9475237984B3A /* Pods-EduARTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8414C927234D887900E78AF1 /* Build configuration list for PBXNativeTarget "EduAR" */;
 			buildPhases = (
+				A87E3E895B74C12C8DDAD666 /* [CP] Check Pods Manifest.lock */,
 				8414C904234D887700E78AF1 /* Sources */,
 				8414C905234D887700E78AF1 /* Frameworks */,
 				8414C906234D887700E78AF1 /* Resources */,
@@ -294,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8414C92A234D887900E78AF1 /* Build configuration list for PBXNativeTarget "EduARTests" */;
 			buildPhases = (
+				9CBA0177E3414F7903270DCE /* [CP] Check Pods Manifest.lock */,
 				8414C91A234D887900E78AF1 /* Sources */,
 				8414C91B234D887900E78AF1 /* Frameworks */,
 				8414C91C234D887900E78AF1 /* Resources */,
@@ -352,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				825312CF235DB58500D15967 /* ARListCell.xib in Resources */,
+				84118AE4235EC78000C9FD78 /* GoogleService-Info.plist in Resources */,
 				8414C918234D887800E78AF1 /* LaunchScreen.storyboard in Resources */,
 				844CA894234DDB72004593AA /* ARScreen.storyboard in Resources */,
 				8414C915234D887800E78AF1 /* Assets.xcassets in Resources */,
@@ -369,6 +400,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CBA0177E3414F7903270DCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EduARTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87E3E895B74C12C8DDAD666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EduAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8414C904234D887700E78AF1 /* Sources */ = {
@@ -562,6 +640,7 @@
 		};
 		8414C928234D887900E78AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C905586453D42599364673 /* Pods-EduAR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -581,6 +660,7 @@
 		};
 		8414C929234D887900E78AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50300BEBA73D11D10DCC5710 /* Pods-EduAR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +680,7 @@
 		};
 		8414C92B234D887900E78AF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9020C540A7F6C6B58E5B04F /* Pods-EduARTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +703,7 @@
 		};
 		8414C92C234D887900E78AF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0201F6725F9475237984B3A /* Pods-EduARTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

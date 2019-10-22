@@ -28,6 +28,11 @@ final class ARListViewController: UIViewController {
         _setupView()
         _presenter?.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        _presenter.viewWillAppear(animated: animated)
+    }
 	
     // MARK: - Setup Initial View
     private func _setupView() {

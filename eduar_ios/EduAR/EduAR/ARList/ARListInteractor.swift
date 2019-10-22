@@ -11,6 +11,7 @@
 
 import Foundation
 import Common
+import Firebase
 
 final class ARListInteractor { }
 
@@ -23,5 +24,38 @@ extension ARListInteractor: ARListInteractorInterface {
             ARData(image: "", title: "EMERALD TOWER")
         ]
         return arDatas
+    }
+
+    func checkRemoteConfigAppEnabled() {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("iiic_ar_config").observeSingleEvent(of: .value) { (snapshot) in
+            let string = snapshot.value as! String
+            UserDefaults.standard.set(string, forKey: ARListConstant.appEnable)
+        }
+    }
+    
+    func appEnabled() -> Bool {
+        guard let string = UserDefaults.standard.string(forKey: ARListConstant.appEnable) else {
+            return false
+        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        if let date = dateFormatter.date(from: string) {
+            if date < Date() {
+                return false
+            } else {
+                return true
+            }
+        } else {
+            switch string {
+            case "enable":
+                return true
+            case "disable":
+                return false
+            default:
+                return false
+            }
+        }
     }
 }

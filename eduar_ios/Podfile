@@ -1,0 +1,16 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '13.0'
+
+workspace 'EduAR'
+
+target 'EduAR' do
+project 'EduAR/EduAR.xcodeproj'
+
+  pod 'Firebase/Database'
+
+  target 'EduARTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
