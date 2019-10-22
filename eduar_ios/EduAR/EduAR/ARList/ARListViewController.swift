@@ -39,11 +39,9 @@ final class ARListViewController: UIViewController {
         // Write your initial setup here
         tableView.register(UINib(nibName: "ARListCell", bundle: .main), forCellReuseIdentifier: "ARListCell")
         tableView.separatorStyle = .none
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 40
         tableView.delegate = self
         tableView.dataSource = self
-        overrideUserInterfaceStyle = .dark
+        overrideUserInterfaceStyle = .light
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -62,6 +60,10 @@ extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         _presenter.onTapList(atIndex: indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.width / 2
     }
 }
 

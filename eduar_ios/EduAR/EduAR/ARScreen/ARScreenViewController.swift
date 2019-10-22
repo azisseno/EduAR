@@ -23,7 +23,7 @@ final class ARScreenViewController: UIViewController {
         _presenter = presenter
     }
     
-    var virtualObject: VirtualObject!
+    var arData: ARData!
 
     // MARK: - View Controller Lifecycle -
     override func viewDidLoad() {

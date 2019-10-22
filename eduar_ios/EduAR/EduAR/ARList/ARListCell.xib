@@ -15,29 +15,45 @@
                 <rect key="frame" x="0.0" y="0.0" width="532" height="340"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWh-yf-fJO">
-                        <rect key="frame" x="16" y="16" width="500" height="275"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LX-y9-eS7">
-                        <rect key="frame" x="10" y="307" width="512" height="21"/>
-                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsK-x6-TVW">
+                        <rect key="frame" x="20" y="30" width="492" height="290"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SWh-yf-fJO">
+                                <rect key="frame" x="16" y="16" width="460" height="222"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LX-y9-eS7">
+                                <rect key="frame" x="10" y="254" width="472" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CfX-Fr-Opc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3LX-y9-eS7" secondAttribute="trailing" constant="10" id="IG8-Om-St7"/>
+                            <constraint firstAttribute="bottom" secondItem="3LX-y9-eS7" secondAttribute="bottom" constant="16" id="LyJ-zv-DSG"/>
+                            <constraint firstItem="SWh-yf-fJO" firstAttribute="leading" secondItem="RsK-x6-TVW" secondAttribute="leading" constant="16" id="aTt-6u-ly1"/>
+                            <constraint firstItem="3LX-y9-eS7" firstAttribute="top" secondItem="SWh-yf-fJO" secondAttribute="bottom" constant="16" id="do9-nN-XZA"/>
+                            <constraint firstItem="SWh-yf-fJO" firstAttribute="top" secondItem="RsK-x6-TVW" secondAttribute="top" constant="16" id="pQl-zH-bwY"/>
+                            <constraint firstAttribute="trailing" secondItem="SWh-yf-fJO" secondAttribute="trailing" constant="16" id="sDY-Hz-lf0"/>
+                            <constraint firstItem="3LX-y9-eS7" firstAttribute="leading" secondItem="RsK-x6-TVW" secondAttribute="leading" constant="10" id="yPZ-Nu-aWZ"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="3LX-y9-eS7" secondAttribute="trailing" constant="10" id="8So-3x-K2O"/>
-                    <constraint firstItem="3LX-y9-eS7" firstAttribute="top" secondItem="SWh-yf-fJO" secondAttribute="bottom" constant="16" id="BHv-EH-aT5"/>
-                    <constraint firstItem="3LX-y9-eS7" firstAttribute="leading" secondItem="HED-ub-ABt" secondAttribute="leading" constant="10" id="BOV-3s-DjY"/>
-                    <constraint firstItem="SWh-yf-fJO" firstAttribute="leading" secondItem="HED-ub-ABt" secondAttribute="leading" constant="16" id="cp4-7w-F98"/>
-                    <constraint firstAttribute="trailing" secondItem="SWh-yf-fJO" secondAttribute="trailing" constant="16" id="nkc-l1-iqD"/>
-                    <constraint firstItem="SWh-yf-fJO" firstAttribute="top" secondItem="HED-ub-ABt" secondAttribute="top" constant="16" id="sko-pO-lib"/>
-                    <constraint firstAttribute="bottom" secondItem="3LX-y9-eS7" secondAttribute="bottom" constant="12" id="xth-j7-6QM"/>
+                    <constraint firstAttribute="bottom" secondItem="RsK-x6-TVW" secondAttribute="bottom" constant="20" id="4fx-qZ-ZgS"/>
+                    <constraint firstAttribute="trailing" secondItem="RsK-x6-TVW" secondAttribute="trailing" constant="20" id="8bl-Ki-v3P"/>
+                    <constraint firstItem="RsK-x6-TVW" firstAttribute="top" secondItem="HED-ub-ABt" secondAttribute="top" constant="30" id="IXw-5p-uLY"/>
+                    <constraint firstItem="RsK-x6-TVW" firstAttribute="leading" secondItem="HED-ub-ABt" secondAttribute="leading" constant="20" id="sVh-m2-vtG"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imageProduct" destination="SWh-yf-fJO" id="4TD-lx-Tch"/>
                 <outlet property="titleLabel" destination="3LX-y9-eS7" id="JOs-cL-NSJ"/>
+                <outlet property="viewBorder" destination="RsK-x6-TVW" id="g4s-y8-7BH"/>
             </connections>
             <point key="canvasLocation" x="142.02898550724638" y="107.14285714285714"/>
         </tableViewCell>

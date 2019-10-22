@@ -81,6 +81,22 @@ extension VirtualObject {
         }
     }()
     
+    static func getAvailableObjects(arTitle: String) -> VirtualObject {
+        let modelsURL = Bundle.main.url(forResource: "Models.scnassets", withExtension: nil)!
+
+        let fileEnumerator = FileManager().enumerator(at: modelsURL, includingPropertiesForKeys: [])!
+
+        while let element = fileEnumerator.nextObject() {
+            let url = element as! URL
+
+            if url.pathExtension == "scn" && url.path.lowercased().contains(arTitle.lowercased()) {
+                return VirtualObject(url: url)!
+            }
+        }
+        
+        return VirtualObject()
+    }
+    
     /// Returns a `VirtualObject` if one exists as an ancestor to the provided node.
     static func existingObjectContainingNode(_ node: SCNNode) -> VirtualObject? {
         if let virtualObjectRoot = node as? VirtualObject {

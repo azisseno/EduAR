@@ -45,6 +45,7 @@ extension ARScreenBuilderInterface {
         let presenter: ARScreenPresenterInterface = resolve()
         presenter.set(router: router)
         let view: ARScreenViewController = resolve(presenter: presenter)
+        view.arData = data
         presenter.set(view: view)
         router.set(view: view)
         view.presentationController?.delegate = adaptiveDelegate

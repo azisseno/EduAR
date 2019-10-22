@@ -24,9 +24,11 @@ extension ARScreenViewController: UIGestureRecognizerDelegate {
         
         statusViewController.cancelScheduledMessage(for: .contentPlacement)
         
-        virtualObjectLoader.loadVirtualObject(virtualObject, loadedHandler: { [unowned self] loadedObject in
+        let object = VirtualObject.availableObjects[arData.index!]
+        virtualObjectLoader.loadVirtualObject(object, loadedHandler: { [unowned self] loadedObject in
             do {
-                let scene = try SCNScene(url: self.virtualObject.referenceURL, options: nil)
+                let scene = try SCNScene(url: object.referenceURL, options: nil)
+
                 self.sceneView.prepare([scene], completionHandler: { _ in
                     DispatchQueue.main.async {
                         self.hideObjectLoadingUI()

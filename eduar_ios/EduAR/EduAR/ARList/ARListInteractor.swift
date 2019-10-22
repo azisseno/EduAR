@@ -20,8 +20,8 @@ extension ARListInteractor: ARListInteractorInterface {
     
     func fetchARList() -> [ARData]  {
         let arDatas: [ARData] = [
-            ARData(image: "", title: "JATIWARNA"),
-            ARData(image: "", title: "EMERALD TOWER")
+            ARData(image: "jatiwarna", title: "JATIWARNA", index: 0),
+            ARData(image: "emerald", title: "EMERALD TOWER", index: 1)
         ]
         return arDatas
     }
