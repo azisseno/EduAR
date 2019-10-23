@@ -37,17 +37,6 @@ class ARScreenStatusViewController: UIViewController {
     @IBOutlet weak var arrowDownImage: UIImageView!
 
     // MARK: - Properties
-  
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        UIView.animate(withDuration: 1, animations: {
-            self.arrowDownImage.frame.origin.y -= 10
-        }) { _ in
-            UIView.animateKeyframes(withDuration: 1, delay: 0.25, options: [.autoreverse, .repeat], animations: {
-                self.arrowDownImage.frame.origin.y += 10
-            })
-        }
-    }
     
     /// Trigerred when the "Restart Experience" button is tapped.
     var restartExperienceHandler: () -> Void = {}
@@ -59,6 +48,29 @@ class ARScreenStatusViewController: UIViewController {
     private var messageHideTimer: Timer?
     
     private var timers: [MessageType: Timer] = [:]
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        _animateArrow()
+    }
+    
+    private func _animateArrow() {
+        let oldValue = arrowDownImage.center
+        let newValue = CGPoint.init(x: arrowDownImage.center.x, y: arrowDownImage.center.y + 10)
+        
+        CATransaction.begin()
+        
+        let bouncyAnimation = CABasicAnimation(keyPath: "position.y")
+        bouncyAnimation.fromValue = oldValue.y
+        bouncyAnimation.toValue = newValue.y
+        bouncyAnimation.repeatCount = .infinity
+        bouncyAnimation.duration = 0.5
+        bouncyAnimation.autoreverses = true
+        
+        arrowDownImage.layer.add(bouncyAnimation, forKey: "position")
+        
+        CATransaction.commit()
+    }
     
     // MARK: - Message Handling
     
