@@ -53,10 +53,48 @@
                     </view>
                     <navigationItem key="navigationItem" title="IIIC" id="z12-IK-oNk"/>
                     <connections>
+                        <outlet property="footerView" destination="akV-1i-3DE" id="Ley-bA-pGE"/>
+                        <outlet property="sliderLabel" destination="fJe-Rw-uV0" id="nXx-sx-SNf"/>
+                        <outlet property="sliderView" destination="nyl-gW-s3y" id="tUF-hP-w62"/>
                         <outlet property="tableView" destination="McQ-jD-mad" id="aY9-9g-yi9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="akV-1i-3DE">
+                    <rect key="frame" x="0.0" y="0.0" width="369" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7fi-sn-3SG">
+                            <rect key="frame" x="24" y="12" width="321" height="76"/>
+                            <subviews>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nyl-gW-s3y">
+                                    <rect key="frame" x="-2" y="0.0" width="325" height="44.5"/>
+                                    <connections>
+                                        <action selector="sliderAction:" destination="zIc-eW-6fX" eventType="valueChanged" id="OMv-Tn-54T"/>
+                                    </connections>
+                                </slider>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJe-Rw-uV0">
+                                    <rect key="frame" x="139.5" y="55.5" width="42" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="nyl-gW-s3y" secondAttribute="trailing" id="DRl-dE-gda"/>
+                                <constraint firstItem="nyl-gW-s3y" firstAttribute="leading" secondItem="7fi-sn-3SG" secondAttribute="leading" id="jj2-AP-gbu"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7fi-sn-3SG" firstAttribute="leading" secondItem="k74-lN-NPP" secondAttribute="leading" constant="24" id="3ht-GN-JHG"/>
+                        <constraint firstItem="k74-lN-NPP" firstAttribute="trailing" secondItem="7fi-sn-3SG" secondAttribute="trailing" constant="24" id="6hg-l5-1p9"/>
+                        <constraint firstItem="k74-lN-NPP" firstAttribute="bottom" secondItem="7fi-sn-3SG" secondAttribute="bottom" constant="12" id="frQ-Af-fqh"/>
+                        <constraint firstItem="7fi-sn-3SG" firstAttribute="top" secondItem="k74-lN-NPP" secondAttribute="top" constant="12" id="zhs-YK-sSW"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="k74-lN-NPP"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="1244" y="302.6986506746627"/>
         </scene>

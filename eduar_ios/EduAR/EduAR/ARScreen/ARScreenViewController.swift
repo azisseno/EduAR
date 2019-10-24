@@ -17,6 +17,7 @@ final class ARScreenViewController: UIViewController {
 
     // MARK: - Default properties -
     private var _presenter: ARScreenPresenterInterface!
+    var scale: Float!
     
     // MARK: - Module Setup -
     func set(presenter: ARScreenPresenterInterface) {
@@ -98,6 +99,7 @@ final class ARScreenViewController: UIViewController {
     private var lastObjectAvailabilityUpdateTimestamp: TimeInterval?
     var selectedVirtualObjectRows = IndexSet()
     var enabledVirtualObjectRows = Set<Int>()
+    
 }
 
 // MARK: - Extensions from interface

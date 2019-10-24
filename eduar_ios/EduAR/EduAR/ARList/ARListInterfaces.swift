@@ -17,7 +17,7 @@ struct ARListConstant {
 }
 
 enum ARListNavigationOption {
-    case arScreen(ARData)
+    case arScreen(data: ARData, scale: Float)
     case errorScreen
 }
 
@@ -32,7 +32,7 @@ protocol ARListViewInterface: ViewInterface {
 protocol ARListPresenterInterface: PresenterInterface {
     func numberOfRows() -> Int
     func getArData(atIndex index: Int) -> ARData
-    func onTapList(atIndex index: Int)
+    func onTapList(atIndex index: Int, scale: Float)
     func onModaDismiss()
 }
 

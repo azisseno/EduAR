@@ -69,9 +69,10 @@ extension ARListPresenter: ARListPresenterInterface {
         return arDatas[index]
     }
     
-    func onTapList(atIndex index: Int) {
+    func onTapList(atIndex index: Int, scale: Float) {
         _checkEnableDisableApp()
-        _router?.navigate(to: .arScreen(arDatas[index]))
+        _router?.navigate(to: .arScreen(data: arDatas[index],
+                                        scale: scale))
     }
     
     func onModaDismiss() {

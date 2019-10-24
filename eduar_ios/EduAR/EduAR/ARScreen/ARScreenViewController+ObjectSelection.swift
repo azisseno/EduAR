@@ -11,10 +11,16 @@ import ARKit
 
 extension ARScreenViewController {
     
+    var scaleVector: SCNVector3 {
+        return SCNVector3(0.1 * scale,
+                          0.1 * scale,
+                          0.1 * scale)
+    }
+    
     func placeVirtualObject(_ virtualObject: VirtualObject) {
         guard focusSquare.state != .initializing, let query = virtualObject.raycastQuery else {
             self.statusViewController.showMessage("CANNOT PLACE OBJECT\nTry moving left or right.")
-            virtualObject.scale = SCNVector3(00.1, 00.1, 00.1)
+            virtualObject.scale = scaleVector
             
             return
         }
@@ -52,7 +58,7 @@ extension ARScreenViewController {
     
     func setTransform(of virtualObject: VirtualObject, with result: ARRaycastResult) {
         virtualObject.simdWorldTransform = result.worldTransform
-        virtualObject.scale = SCNVector3(00.1, 00.1, 00.1)
+        virtualObject.scale = scaleVector
     }
     
     // MARK: Object Loading UI

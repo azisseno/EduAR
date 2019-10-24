@@ -42,9 +42,28 @@ final class ARListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         overrideUserInterfaceStyle = .light
+        
+        // SliderView
+        sliderView.value = 1
+        sliderView.minimumValue = 1
+        sliderView.maximumValue = 10
+        sliderLabel.text = sliderString
+
     }
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var footerView: UIView!
+    @IBOutlet weak var sliderView: UISlider!
+    @IBOutlet weak var sliderLabel: UILabel!
+    
+    @IBAction func sliderAction(_ sender: Any) {
+        sliderLabel.text = sliderString
+    }
+    
+    var sliderString: String {
+        return "\(ceilf(sliderView.value)) x"
+    }
+    
 }
 
 extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -59,11 +78,19 @@ extension ARListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        _presenter.onTapList(atIndex: indexPath.row)
+        _presenter.onTapList(atIndex: indexPath.row, scale: ceilf(sliderView.value))
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (UIScreen.main.bounds.height - 120) / 2
+        return (tableView.frame.height - 220) / 2
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 100
     }
 }
 

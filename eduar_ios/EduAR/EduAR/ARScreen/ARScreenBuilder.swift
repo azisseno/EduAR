@@ -40,7 +40,9 @@ extension ARScreenBuilderInterface {
         return ARScreenRouter()
     }
     
-    func main(data: ARData, adaptiveDelegate: UIAdaptivePresentationControllerDelegate? = nil) -> UIViewController {
+    func main(data: ARData,
+              adaptiveDelegate: UIAdaptivePresentationControllerDelegate? = nil,
+              scale: Float = 1) -> UIViewController {
         let router: ARScreenRouterInterface = resolve()
         let presenter: ARScreenPresenterInterface = resolve()
         presenter.set(router: router)
@@ -49,6 +51,7 @@ extension ARScreenBuilderInterface {
         presenter.set(view: view)
         router.set(view: view)
         view.presentationController?.delegate = adaptiveDelegate
+        view.scale = scale
         return view
     }
     
